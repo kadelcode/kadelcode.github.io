@@ -9024,7 +9024,32 @@ li {
 
   .nav-menu {
     flex-direction: column;
+    display: block;
+    z-index: 99999;
   }
+
+  /* New Styles */
+  .w-nav-menu {
+    display: none; /* Hidden by default */
+    position: fixed; /* Make it visible on screen */
+    margin-top: 80px; /*Adjust this to position below the navbar */
+    left: 0;
+    right: 0;
+    /*background: white;*/
+    z-index: 1000;
+    text-align: left;
+    padding: 0 25px;
+  }
+
+  .w-nav-menu a {
+    margin-bottom: 12px;
+  }
+
+  ul li:last-child a {
+    margin-bottom: 0px;
+  }
+
+  /*End new style*/
 
   .footer-wrapper {
     grid-column-gap: 30px;
